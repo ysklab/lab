@@ -1,0 +1,6 @@
+project(test_class_in_class)
+set(CMAKE_CXX_STANDARD 17)
+cmake_minimum_required(VERSION 3.0)
+add_library(a a.cc)
+add_executable(main main.cc)
+target_link_libraries(main a)

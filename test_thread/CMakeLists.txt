@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(test_thread)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Threads REQUIRED)
+add_executable(multi_threads src/multi_threads.cc)
+target_link_libraries(multi_threads Threads::Threads)
